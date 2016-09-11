@@ -34,7 +34,7 @@ let GitHubFetcher = {
         updated_at: "2016-09-05T15:39:54Z"
       }
 
-    }else {
+    } else if( username === 'mhaidarh' ) {
       return {
         login: "mhaidarh",
         id: 235584,
@@ -67,6 +67,38 @@ let GitHubFetcher = {
         created_at: "2010-04-02T09:27:05Z",
         updated_at: "2016-08-30T04:24:00Z"
       }
+    }
+    return {
+      login: "rubicode",
+      id: 12389910,
+      avatar_url: "https://avatars.githubusercontent.com/u/12389910?v=3",
+      gravatar_id: "",
+      url: "https://api.github.com/users/rubicode",
+      html_url: "https://github.com/rubicode",
+      followers_url: "https://api.github.com/users/rubicode/followers",
+      following_url: "https://api.github.com/users/rubicode/following{/other_user}",
+      gists_url: "https://api.github.com/users/rubicode/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/rubicode/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/rubicode/subscriptions",
+      organizations_url: "https://api.github.com/users/rubicode/orgs",
+      repos_url: "https://api.github.com/users/rubicode/repos",
+      events_url: "https://api.github.com/users/rubicode/events{/privacy}",
+      received_events_url: "https://api.github.com/users/rubicode/received_events",
+      type: "User",
+      site_admin: false,
+      name: "Rubi Henjaya",
+      company: null,
+      blog: null,
+      location: null,
+      email: "rubi.henjaya@gmail.com",
+      hireable: null,
+      bio: null,
+      public_repos: 3,
+      public_gists: 0,
+      followers: 1,
+      following: 0,
+      created_at: "2015-05-11T06:30:26Z",
+      updated_at: "2016-09-01T11:47:48Z"
     }
 
   }

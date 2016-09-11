@@ -84,5 +84,43 @@ describe('get user details', () => {
     actual = GitHubFetcher.getUserDetails(input)
 
     expect(actual).to.deep.equal(expected)
+
+    // Third test
+    input = 'rubicode'
+    expected = {
+      login: "rubicode",
+      id: 12389910,
+      avatar_url: "https://avatars.githubusercontent.com/u/12389910?v=3",
+      gravatar_id: "",
+      url: "https://api.github.com/users/rubicode",
+      html_url: "https://github.com/rubicode",
+      followers_url: "https://api.github.com/users/rubicode/followers",
+      following_url: "https://api.github.com/users/rubicode/following{/other_user}",
+      gists_url: "https://api.github.com/users/rubicode/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/rubicode/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/rubicode/subscriptions",
+      organizations_url: "https://api.github.com/users/rubicode/orgs",
+      repos_url: "https://api.github.com/users/rubicode/repos",
+      events_url: "https://api.github.com/users/rubicode/events{/privacy}",
+      received_events_url: "https://api.github.com/users/rubicode/received_events",
+      type: "User",
+      site_admin: false,
+      name: "Rubi Henjaya",
+      company: null,
+      blog: null,
+      location: null,
+      email: "rubi.henjaya@gmail.com",
+      hireable: null,
+      bio: null,
+      public_repos: 3,
+      public_gists: 0,
+      followers: 1,
+      following: 0,
+      created_at: "2015-05-11T06:30:26Z",
+      updated_at: "2016-09-01T11:47:48Z"
+    }
+
+    actual = GitHubFetcher.getUserDetails(input)
+    expect(actual).to.deep.equal(expected)
   })
 })
