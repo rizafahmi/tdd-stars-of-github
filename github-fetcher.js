@@ -101,6 +101,9 @@ let GitHubFetcher = {
       updated_at: "2016-09-01T11:47:48Z"
     }
 
+  },
+  searchUsers: (options) => {
+    return {}
   }
 }
 

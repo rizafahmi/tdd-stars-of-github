@@ -127,4 +127,16 @@ describe('get user details', () => {
     })
 
   })
+
+})
+
+describe('searchUsers', () => {
+  it('should return an object', () => {
+    let actual = GitHubFetcher.searchUsers({
+      location: 'Jakarta',
+      language: 'JavaScript'
+    })
+
+    expect(typeof actual).to.equal("object")
+  })
 })
