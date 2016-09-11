@@ -46,5 +46,43 @@ describe('get user details', () => {
     }
 
     expect(actual).to.deep.equal(expected)
+
+    // Second test
+    input = 'mhaidarh'
+    expected = {
+      login: "mhaidarh",
+      id: 235584,
+      avatar_url: "https://avatars.githubusercontent.com/u/235584?v=3",
+      gravatar_id: "",
+      url: "https://api.github.com/users/mhaidarh",
+      html_url: "https://github.com/mhaidarh",
+      followers_url: "https://api.github.com/users/mhaidarh/followers",
+      following_url: "https://api.github.com/users/mhaidarh/following{/other_user}",
+      gists_url: "https://api.github.com/users/mhaidarh/gists{/gist_id}",
+      starred_url: "https://api.github.com/users/mhaidarh/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/mhaidarh/subscriptions",
+      organizations_url: "https://api.github.com/users/mhaidarh/orgs",
+      repos_url: "https://api.github.com/users/mhaidarh/repos",
+      events_url: "https://api.github.com/users/mhaidarh/events{/privacy}",
+      received_events_url: "https://api.github.com/users/mhaidarh/received_events",
+      type: "User",
+      site_admin: false,
+      name: "M Haidar Hanif",
+      company: "@Hazeorid & @Hacktiv8",
+      blog: "http://mhaidarhanif.com",
+      location: "Earth",
+      email: "git@mhaidarhanif.com",
+      hireable: true,
+      bio: "To optimize people actions, so that humanity can grow and thrive for good ⚡",
+      public_repos: 54,
+      public_gists: 6,
+      followers: 109,
+      following: 872,
+      created_at: "2010-04-02T09:27:05Z",
+      updated_at: "2016-08-30T04:24:00Z"
+    }
+    actual = GitHubFetcher.getUserDetails(input)
+
+    expect(actual).to.deep.equal(expected)
   })
 })
